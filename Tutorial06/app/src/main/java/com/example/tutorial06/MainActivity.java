@@ -20,9 +20,14 @@ public class MainActivity extends AppCompatActivity {
         final Intent intent = new Intent(this,MainActivity2.class);
         String name = "Dr. Prasad Lakshan";
         String pos = "Lecture at UCSC";
-        intent.putExtra("USER_NAME",name);
-        intent.putExtra("USER_POS",pos);
+        //intent.putExtra("USER_NAME",name);
+        //intent.putExtra("USER_POS",pos);
 
+        Bundle extras = new Bundle();
+        extras.putString("USER_NAME",name);
+        extras.putString("USER_POS",pos);
+
+        intent.putExtras(extras);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -20,8 +20,13 @@ public class MainActivity2 extends AppCompatActivity {
         txtuser = findViewById(R.id.textusername);
         txtpos = findViewById(R.id.textpos);
         Intent intent = getIntent();
-        String name = intent.getStringExtra("USER_NAME");
-        String pos = intent.getStringExtra("USER_POS");
+        //String name = intent.getStringExtra("USER_NAME");
+        //String pos = intent.getStringExtra("USER_POS");
+
+        Bundle extras = intent.getExtras();
+        String name = extras.getString("USER_NAME");
+        String pos = extras.getString("USER_POS");
+
         txtuser.setText(name);
         txtpos.setText(pos);
 

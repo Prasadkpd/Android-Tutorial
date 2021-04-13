@@ -9,9 +9,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="177dp"
-        android:layout_height="74dp"
-        android:text="Activity One"
+        android:layout_width="241dp"
+        android:layout_height="86dp"
+        android:text="Welcome To My App"
         android:textAlignment="center"
         android:textColorHighlight="#FFFFFF"
         android:textSize="30sp"
