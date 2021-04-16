@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_EMAIL,new String[] {"someone@gmail.com"});
         intent.putExtra(Intent.EXTRA_SUBJECT,"This is our test Subject");
         intent.putExtra(Intent.EXTRA_TEXT,"This is our text email body");
-        intent.setType("message/rfc822");
+        intent.setType("text/plain");
         chooser = Intent.createChooser(intent,"Send email test app");
 
         btn.setOnClickListener(new View.OnClickListener() {
