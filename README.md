@@ -2,4 +2,4 @@
 All the android tutorial follow from the fundamentals to advanced with Android Studio
 
 
-1. Tutorial 02 - Activity Life Cycle
+1. Tutorial 02 - Activity Life Cycle / Activities & States
