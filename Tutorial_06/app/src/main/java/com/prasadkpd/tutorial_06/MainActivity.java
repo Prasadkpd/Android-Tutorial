@@ -19,7 +19,14 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(getApplicationContext(), Activity_Two.class);
         String name = "Prasad Lakshan";
-        intent.putExtra("USER_NAME", name);
+        String city = "Galle";
+
+//        intent.putExtra("USER_NAME", name);
+        Bundle extras = new Bundle();
+        extras.putString("USER_NAME", name);
+        extras.putString("USER_CITY", city);
+
+        intent.putExtras(extras);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override
